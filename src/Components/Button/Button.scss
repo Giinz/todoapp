@@ -1,0 +1,31 @@
+:root{
+    --createColor: #ebfffc;
+    --createTextColor: #00947e;
+    --resetColor: #feecf0;
+    --resetTextColor: #cc0f35;
+}
+.button__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.Button__btn{
+    padding: 0.5em 1em;
+    border-color: transparent;
+    text-align: center;
+    border: 4px;
+    box-shadow: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.Create{
+    background-color: var(--createColor);
+    color: var(--createTextColor);
+    margin-right: 0.5rem;
+}
+.Reset{
+    background-color: var(--resetColor);
+    color: var(--resetTextColor);
+}

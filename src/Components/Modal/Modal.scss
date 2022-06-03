@@ -1,0 +1,79 @@
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+    .modalContent{
+        z-index: 2;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 5% auto;
+        width: 80%;
+        justify-content: space-between;
+        background-color: #fefefe;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #888;
+        .Submit__wrapper{
+            flex: none;
+            margin-bottom: 12px; 
+            .text{
+                margin-bottom: 8px;
+            }
+        }
+        .editDescription{
+            max-height: 40em;
+            min-height: 8em;
+        }
+    }
+}
+.modalOptions{
+    display: flex;
+    flex-direction: column;
+    .modalCheckbox, .Change{
+        cursor: pointer;
+    }
+    .modalCheckbox{
+        max-width: max-content;
+    }
+    .Change{
+        max-width: max-content;
+        padding: 7px 16px;
+        background: #00d1b2;
+        color: #fff;
+        text-align: center;
+        border-radius: 4px;
+        border-color: transparent;
+        font-size: 16px;
+        margin-top: 16px;
+        &:hover{
+            background-color: #00c4a7;
+        }
+    }
+}
+.modalClose{
+    position: absolute;
+    right: 20px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgba(10,10,10,.2);
+    border-radius: 290486px;
+    border: none;
+    height: 20px;
+    max-height: 20px;
+    min-height: 20px;
+    max-width: 20px;
+    min-width: 20px;
+    outline: 0;
+    width: 20px;
+    cursor: pointer;
+    &:hover{
+        background-color:rgba(10,10,10,0.3)
+    }
+}

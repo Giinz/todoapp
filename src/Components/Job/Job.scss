@@ -1,0 +1,69 @@
+.Output{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 1rem 0;
+    background-color: var(--createColor);
+    overflow: hidden;
+    border-radius: 4px;
+    .Output__header,.Output__body{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        max-width: 100%;
+        color: var(--createTextColor);
+    }
+    .Output__header{
+        background-color: #00d1b2;
+        color: #fff;
+        font-weight: 700;
+    }
+    .delete{
+        padding: 0.2rem 0.4rem;
+        border-radius: 50%;
+        border: none;
+        color: #fff;
+        background-color: var(--createTextColor);
+        font-weight: 600;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    .Edit{
+        background: #fff;
+        margin-right: 0.25rem;
+        border: 1px solid var(--borderColor);
+    }
+    label{
+        cursor: pointer;
+    }
+    .Output__header__done{
+        background-color: var(--btnTextColor);
+        color: #fff;
+        text-decoration: line-through;
+    }
+    .Output__body__done{
+        background-color: #fafafa;
+        color: var(--btnTextColor);
+        text-decoration: line-through;
+    }
+}
+// .Options{
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     .Input{
+//         display: flex;
+//         flex-direction: row-reverse;
+//         align-items: center;
+
+//         margin: 0;
+//         span{
+//             margin: 0 0 0 0.25rem;
+//         }
+//     }
+// }
