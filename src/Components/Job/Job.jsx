@@ -1,12 +1,11 @@
 import "./Job.scss"
-import Input from "../Input/Input"
 const Job =({title,deadline,description,handleDelete,handleOpenModal,checkboxValue,handleCheckbox})=>{
     return(
         <div className="Output">
             <div className={checkboxValue?"Output__header Output__header__done":"Output__header"}>
                 <p>{title}</p>
                 <div>
-                    <span className="Deadline">{deadline==''?'':('Deadline:'+' '+deadline)}</span>
+                    <span className="Deadline">{deadline===''?'':(`Deadline: ${deadline}`)}</span>
                     <button className="delete" onClick={handleDelete}>X</button>
                 </div>
             </div>
